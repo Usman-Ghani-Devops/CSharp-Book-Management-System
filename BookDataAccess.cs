@@ -2,17 +2,17 @@ namespace BookManagementSystem;
 
 class BookDataAccess
 {
-    public void add_book(Book book)
+    public bool add_book(Book book)
     {
         FileStream fs = new FileStream("books.txt", FileMode.Append);
         StreamWriter writer = new StreamWriter(fs);
         string line = $"{book.Id}, {book.Title}, {book.Author}, {book.Price}";
 
         writer.WriteLine(line);
-
         writer.Close();
-
         fs.Close();
+
+        return true;
     }
 
     public List<Book> view_all_books()
@@ -106,4 +106,4 @@ class BookDataAccess
 
         return true;
     }
-}
+}   
