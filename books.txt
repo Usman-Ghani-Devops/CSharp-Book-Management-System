@@ -1,3 +1,1 @@
-1, C#, Welbert, 1200
-1, C#, Welbert, 1200
-1, C#, Welbert, 1200
+1, Csharp, Welbeert, 1200
